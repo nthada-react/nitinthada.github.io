@@ -146,7 +146,7 @@
 			<h1 class="wow fadeInUp">Join Online Graphic Design Course</h1>
 			<h2 class="wow fadeIn"><span class="write"></span> </h2>
 			<p class="wow zoomIn">Enroll today for an online demo class and be a part of one of the finest advanced courses in graphic designing at RedSketch Academy. Learn the key skills with industry exposure to kick off a successful career in the field.</p>
-			<div class="plane mb-5 span3 wow bounceInUp"  data-wow-delay="0.30s"><img src="assets/images/plane.png" alt="" /></div>
+			<div class="box plane mb-5 span3 wow bounceInUp"  data-wow-delay="0.30s"><img src="assets/images/plane.png" alt="" /></div>
 			<a href="#" class="btn wow fadeIn" data-wow-delay="0.50s">ENROLL FOR FREE DEMO CLASS NOW</a>
 		</div>
 	</section>
@@ -191,12 +191,12 @@ Experience </div>
 				Our Courses
 			</h3>
 			<div class="main-service-circle">
-					<img src="https://www.nyxditech.com/wp-content/themes/twentythirteen/images/new_images/main-service-circle.png" class="img-fluid heading-serviceheading" alt="Service-Circle-Animation">
-					<img src="https://www.nyxditech.com/wp-content/themes/twentythirteen/images/new_images/design-circle1.png" class="img-fluid design-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(-180px) translateX(0px);">
-					<img src="https://www.nyxditech.com/wp-content/themes/twentythirteen/images/new_images/development-circle1.png" class="img-fluid development-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(-50px) translateX(250px);">
-					<img src="https://www.nyxditech.com/wp-content/themes/twentythirteen/images/new_images/branding-circle1.png" class="img-fluid branding-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(140px) translateX(130px);">
-					<img src="https://www.nyxditech.com/wp-content/themes/twentythirteen/images/new_images/quality-assurance-circle1.png" class="img-fluid qa-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(140px) translateX(-130px);">
-					<img src="https://www.nyxditech.com/wp-content/themes/twentythirteen/images/new_images/support-services-circle1.png" class="img-fluid support-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(0px) translateX(-200px);">
+					<img src="assets/images/courses/main-service-circle.png" class="img-fluid heading-serviceheading" alt="Service-Circle-Animation">
+					<img src="assets/images/courses/design-circle1.png" class="img-fluid design-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(-180px) translateX(0px);">
+					<img src="assets/images/courses/development-circle1.png" class="img-fluid development-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(-50px) translateX(250px);">
+					<img src="assets/images/courses/branding-circle1.png" class="img-fluid branding-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(140px) translateX(130px);">
+					<img src="assets/images/courses/quality-assurance-circle1.png" class="img-fluid qa-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(140px) translateX(-130px);">
+					<img src="assets/images/courses/support-services-circle1.png" class="img-fluid support-circle" alt="Service-Circle-Animation" style="transition: transform 0.4s ease-in-out 0s; transform: translateY(0px) translateX(-200px);">
 				</div>
 		</div>
 	</section>
@@ -458,9 +458,7 @@ Experience </div>
  <!---====== Custom Js =====-->
 <script src="assets/js/custom.js"></script>
 
-
-
-   <script type="text/javascript">
+<script type="text/javascript">
       $(function () {
          $(".write").typed({
             strings: ["Become A Job Ready Professional", "Become A Job Ready Professional"],
@@ -496,321 +494,387 @@ Experience </div>
             resetCallback: function () { }
          });
       });
+</script>
 
-   </script>
 <script type="text/javascript">
-$(document).ready(function() {
-var movementStrength = 25;
-var height = movementStrength / $(window).height();
-var width = movementStrength / $(window).width();
-$(".heroSection").mousemove(function(e){
-          var pageX = e.pageX - ($(window).width() / 2);
-          var pageY = e.pageY - ($(window).height() / 2);
-          var newvalueX = width * pageX * -2 - 1;
-          var newvalueY = height * pageY * -2 - 1;
-          $('.heroSection').css("background-position", newvalueX+"px     "+newvalueY+"px");
-});
-});
+	$(document).ready(function() {
+		var movementStrength = 25;
+		var height = movementStrength / $(window).height();
+		var width = movementStrength / $(window).width();
+		$(".heroSection").mousemove(function(e){
+		          var pageX = e.pageX - ($(window).width() / 2);
+		          var pageY = e.pageY - ($(window).height() / 2);
+		          var newvalueX = width * pageX * -2 - 1;
+		          var newvalueY = height * pageY * -2 - 1;
+		          $('.heroSection').css("background-position", newvalueX+"px     "+newvalueY+"px");
+		});
+	});
 </script>
 
 
 <script type="text/javascript">
-function customCursor(options) {
-    let settings = $.extend({
-            targetClass: 'custom-cursor', // create element with this class
-            wrapper: $('body'), // jQuery
-            speed: .1,
-            movingDelay: 300, // fire event onStop after delay
-            hasHover: false, // has hover events
-            hoverTarget: $('a[href], button'),
-            touchDevices: false, // show on touch devices
-            onMove: function (data) {
-            }
-        }, options),
-        data = {},
-        checkTouch = !settings.touchDevices && "undefined" !== typeof document.documentElement.ontouchstart,
-        timer = null;
+	function customCursor(options) {
+	    let settings = $.extend({
+	            targetClass: 'custom-cursor', // create element with this class
+	            wrapper: $('body'), // jQuery
+	            speed: .1,
+	            movingDelay: 300, // fire event onStop after delay
+	            hasHover: false, // has hover events
+	            hoverTarget: $('a[href], button'),
+	            touchDevices: false, // show on touch devices
+	            onMove: function (data) {
+	            }
+	        }, options),
+	        data = {},
+	        checkTouch = !settings.touchDevices && "undefined" !== typeof document.documentElement.ontouchstart,
+	        timer = null;
 
-    // exit
-    if (checkTouch || !settings.wrapper.length) return;
+	    // exit
+	    if (checkTouch || !settings.wrapper.length) return;
 
-    // append the ball
-    settings.wrapper.append(`<div class="${settings.targetClass}"></div>`);
+	    // append the ball
+	    settings.wrapper.append(`<div class="${settings.targetClass}"></div>`);
 
-    let $cursor = $('.' + settings.targetClass),
-        position = {x: window.innerWidth / 2, y: window.innerHeight / 2},
-        mouse = {x: position.x, y: position.y},
-        setX = gsap.quickSetter($cursor, "x", "px"),
-        setY = gsap.quickSetter($cursor, "y", "px");
+	    let $cursor = $('.' + settings.targetClass),
+	        position = {x: window.innerWidth / 2, y: window.innerHeight / 2},
+	        mouse = {x: position.x, y: position.y},
+	        setX = gsap.quickSetter($cursor, "x", "px"),
+	        setY = gsap.quickSetter($cursor, "y", "px");
 
-    // update data
-    data.cursor = $cursor;
+	    // update data
+	    data.cursor = $cursor;
 
-    // on mouse move
-    window.addEventListener("mousemove", init);
+	    // on mouse move
+	    window.addEventListener("mousemove", init);
 
-    function init() {
-        // remove default mousemove event
-        window.removeEventListener("mousemove", init);
+	    function init() {
+	        // remove default mousemove event
+	        window.removeEventListener("mousemove", init);
 
-        // add new custom event
-        window.addEventListener("mousemove", e => {
-            mouse.x = e.x;
-            mouse.y = e.y;
+	        // add new custom event
+	        window.addEventListener("mousemove", e => {
+	            mouse.x = e.x;
+	            mouse.y = e.y;
 
-            // update data and trigger event
-            data.isMoving = true;
-            settings.onMove(data);
+	            // update data and trigger event
+	            data.isMoving = true;
+	            settings.onMove(data);
 
-            timer = setTimeout(function () {
-                // update data and trigger event
-                data.isMoving = false;
-                settings.onMove(data);
-            }, settings.movingDelay);
-        });
+	            timer = setTimeout(function () {
+	                // update data and trigger event
+	                data.isMoving = false;
+	                settings.onMove(data);
+	            }, settings.movingDelay);
+	        });
 
-        // fade out cursor
-        document.addEventListener("mouseleave", e => {
-            // update data and trigger event
-            data.isInViewport = false;
-            settings.onMove(data);
-        });
+	        // fade out cursor
+	        document.addEventListener("mouseleave", e => {
+	            // update data and trigger event
+	            data.isInViewport = false;
+	            settings.onMove(data);
+	        });
 
-        // update cursor's position
-        document.addEventListener("mouseenter", e => {
-            mouse.x = position.x = e.x;
-            mouse.y = position.y = e.y;
+	        // update cursor's position
+	        document.addEventListener("mouseenter", e => {
+	            mouse.x = position.x = e.x;
+	            mouse.y = position.y = e.y;
 
-            // update data and trigger event
-            data.isInViewport = true;
-            settings.onMove(data);
-        });
+	            // update data and trigger event
+	            data.isInViewport = true;
+	            settings.onMove(data);
+	        });
 
-        gsap.ticker.add((time, deltaTime) => {
-            let fpms = 60 / 1000,
-                delta = deltaTime * fpms,
-                dt = 1 - Math.pow(1 - settings.speed, delta);
-            position.x += (mouse.x - position.x) * dt;
-            position.y += (mouse.y - position.y) * dt;
-            setX(position.x);
-            setY(position.y);
-        });
+	        gsap.ticker.add((time, deltaTime) => {
+	            let fpms = 60 / 1000,
+	                delta = deltaTime * fpms,
+	                dt = 1 - Math.pow(1 - settings.speed, delta);
+	            position.x += (mouse.x - position.x) * dt;
+	            position.y += (mouse.y - position.y) * dt;
+	            setX(position.x);
+	            setY(position.y);
+	        });
 
-        data.isInViewport = true;
-    }
+	        data.isInViewport = true;
+	    }
 
-    // on hover
-    if (settings.hasHover && settings.hoverTarget.length) {
-        setTimeout(function () {
-            settings.hoverTarget.hover(function () {
-                data.hoverTarget = $(this);
-                data.isHover = true;
-                settings.onMove(data);
-            }, function () {
-                data.hoverTarget = $(this);
-                data.isHover = false;
-                settings.onMove(data);
-            });
-        }, 100);
-    }
-}
-
-// big ball
-customCursor({
-    hasHover: true,
-    onMove: function (data) {
-        if (data.isInViewport) {
-            // in viewport
-            if (data.isMoving) {
-                if (data.isHover) {
-                    gsap.to(data.cursor, {opacity: 1, scale: 1.5});
-                } else {
-                    gsap.to(data.cursor, {opacity: 1, scale: .8});
-                }
-            } else {
-                if (data.isHover) {
-                    gsap.to(data.cursor, {opacity: 1, scale: 1.5});
-                } else {
-                    gsap.to(data.cursor, {opacity: 1, scale: 1});
-                }
-            }
-        } else {
-            // out viewport
-            gsap.to(data.cursor, {opacity: 0, scale: 0});
-        }
-    },
-});
-
-// dot inside
-customCursor({
-    targetClass: 'custom-cursor-dot',
-    speed: .5,
-    onMove: function (data) {
-        if (data.isInViewport) {
-            gsap.to(data.cursor, {opacity: 1});
-        } else {
-            gsap.to(data.cursor, {opacity: 0});
-        }
-    },
-});
-
-
-
-
-// Service Graph Javascript
-$(function () {
-  $(window).scroll(function () {
-    const $mainServiceCircle = $(".main-service-circle");
-    console
-    if ($mainServiceCircle.length) {
-      const windowHeight =
-        $(window).height() - ($(window).width() < 768 ? 300 : 200);
-      const sectionTop = $mainServiceCircle.offset().top;
-      const sectionHeight = $mainServiceCircle.outerHeight();
-      const scrollTop = $(this).scrollTop();
-      const transitionDuration = "0.4s"; // Adjust the duration as needed
-
-      // Calculate how much of the section is visible in the viewport
-      let visiblePercentage = Math.max(
-        0,
-        Math.min(1, (windowHeight - (sectionTop - scrollTop)) / sectionHeight)
-      );
-
-      if ($(window).width() < 768) {
-        visiblePercentage = Math.max(
-          -1,
-          Math.min(1, (windowHeight - (sectionTop - scrollTop)) / sectionHeight)
-        );
-      }
-
-      // Apply transitions to achieve smooth animation
-      const cssTransition = `transform ${transitionDuration} ease-in-out`;
-
-      // Calculate the translateY and translateX values based on the visiblePercentage
-      let designTranslateY;
-      let developmentTranslateY;
-      let developmentTranslateX;
-      let brandingTranslateY;
-      let brandingTranslateX;
-      let qaTranslateY;
-      let qaTranslateX;
-      let supportTranslateY;
-      let supportTranslateX;
-
-      // Check if the screen width is less than a certain value (e.g., 768px for mobile)
-      if ($(window).width() < 768) {
-        if (visiblePercentage > 0) {
-          // Adjust transformation values for mobile screens
-          designTranslateY = -120 * visiblePercentage;
-          developmentTranslateY = -10 * visiblePercentage;
-          developmentTranslateX = 15 * visiblePercentage;
-          brandingTranslateY = 70 * visiblePercentage;
-          brandingTranslateX = -10 * visiblePercentage;
-          qaTranslateY = 60 * visiblePercentage;
-          qaTranslateX = -10 * visiblePercentage;
-          supportTranslateY = 0;
-          supportTranslateX = -10;
-        } else {
-          // Adjust transformation values for mobile screens
-          designTranslateY = 0;
-          developmentTranslateY = -10 * visiblePercentage;
-          developmentTranslateX = 100 * visiblePercentage;
-          brandingTranslateY = 35 * visiblePercentage;
-          brandingTranslateX = 90 * visiblePercentage;
-          qaTranslateY = 35 * visiblePercentage;
-          qaTranslateX = -90 * visiblePercentage;
-          supportTranslateY = -10 * visiblePercentage;
-          supportTranslateX = -110 * visiblePercentage;
-        }
-      } else {
-        if (visiblePercentage > 0) {
-          // Adjust transformation values for Desktop screens
-          designTranslateY = -180 * visiblePercentage;
-          developmentTranslateY = -50 * visiblePercentage;
-          developmentTranslateX = 250 * visiblePercentage;
-          brandingTranslateY = 140 * visiblePercentage;
-          brandingTranslateX = 130 * visiblePercentage;
-          qaTranslateY = 140 * visiblePercentage;
-          qaTranslateX = -130 * visiblePercentage;
-          supportTranslateY = 0 * visiblePercentage;
-          supportTranslateX = -200 * visiblePercentage;
-        } else {
-          // Adjust transformation values for Desktop screens
-          designTranslateY = -180 * visiblePercentage;
-          developmentTranslateY = -50 * visiblePercentage;
-          developmentTranslateX = -60
-          brandingTranslateY = 140 * visiblePercentage;
-          brandingTranslateX = 130 * visiblePercentage;
-          qaTranslateY = 140 * visiblePercentage;
-          qaTranslateX = -130 * visiblePercentage;
-          supportTranslateY = 100
-          supportTranslateX = 100
-        }
-      }
-
-      // Apply the transform CSS property
-      $(".design-circle").css({
-        transition: cssTransition,
-        transform: `translateY(${designTranslateY}px) translateX(0px)`,
-      });
-      $(".development-circle").css({
-        transition: cssTransition,
-        transform: `translateY(${developmentTranslateY}px) translateX(${developmentTranslateX}px)`,
-      });
-      $(".branding-circle").css({
-        transition: cssTransition,
-        transform: `translateY(${brandingTranslateY}px) translateX(${brandingTranslateX}px)`,
-      });
-      $(".qa-circle").css({
-        transition: cssTransition,
-        transform: `translateY(${qaTranslateY}px) translateX(${qaTranslateX}px)`,
-      });
-      $(".support-circle").css({
-        transition: cssTransition,
-        transform: `translateY(${supportTranslateY}px) translateX(${supportTranslateX}px)`,
-      });
-    }
-  });
-});
-
-jQuery(document).ready(function (e) {
-        e(document).ready(function () {
-            var t = e("#workSlider"),
-                o = t.parent();
-            t.sly({
-                horizontal: 1,
-                itemNav: "forceCentered",
-                smart: 1,
-                activateMiddle: !1,
-                itemSelector: null,
-                activateOn: "click",
-                mouseDragging: 1,
-                touchDragging: 1,
-                releaseSwing: 1,
-                startAt: 0,
-                scrollBar: o.find(".scrollbar"),
-                speed: 300,
-                elasticBounds: 1,
-                easing: "easeOutExpo",
-                dragHandle: 1,
-                dynamicHandle: 1,
-                clickBar: 1,
-                prevPage: o.find(".owl-prev"),
-                nextPage: o.find(".owl-next"),
-            });
-        });
-});
-
-
-// Static and Fixed Header Script
-
-$(window).scroll(function(){
-	if ($(window).scrollTop() >= 50) {
-		$('.static-header').addClass('fixed-header');
+	    // on hover
+	    if (settings.hasHover && settings.hoverTarget.length) {
+	        setTimeout(function () {
+	            settings.hoverTarget.hover(function () {
+	                data.hoverTarget = $(this);
+	                data.isHover = true;
+	                settings.onMove(data);
+	            }, function () {
+	                data.hoverTarget = $(this);
+	                data.isHover = false;
+	                settings.onMove(data);
+	            });
+	        }, 100);
+	    }
 	}
-	else {
-		$('.static-header').removeClass('fixed-header');
-	}
-});
+
+	// big ball
+	customCursor({
+	    hasHover: true,
+	    onMove: function (data) {
+	        if (data.isInViewport) {
+	            // in viewport
+	            if (data.isMoving) {
+	                if (data.isHover) {
+	                    gsap.to(data.cursor, {opacity: 1, scale: 1.5});
+	                } else {
+	                    gsap.to(data.cursor, {opacity: 1, scale: .8});
+	                }
+	            } else {
+	                if (data.isHover) {
+	                    gsap.to(data.cursor, {opacity: 1, scale: 1.5});
+	                } else {
+	                    gsap.to(data.cursor, {opacity: 1, scale: 1});
+	                }
+	            }
+	        } else {
+	            // out viewport
+	            gsap.to(data.cursor, {opacity: 0, scale: 0});
+	        }
+	    },
+	});
+
+	// dot inside
+	customCursor({
+	    targetClass: 'custom-cursor-dot',
+	    speed: .5,
+	    onMove: function (data) {
+	        if (data.isInViewport) {
+	            gsap.to(data.cursor, {opacity: 1});
+	        } else {
+	            gsap.to(data.cursor, {opacity: 0});
+	        }
+	    },
+	});
+
+
+
+
+	// Service Graph Javascript
+	$(function () {
+	  $(window).scroll(function () {
+	    const $mainServiceCircle = $(".main-service-circle");
+	    console
+	    if ($mainServiceCircle.length) {
+	      const windowHeight =
+	        $(window).height() - ($(window).width() < 768 ? 300 : 200);
+	      const sectionTop = $mainServiceCircle.offset().top;
+	      const sectionHeight = $mainServiceCircle.outerHeight();
+	      const scrollTop = $(this).scrollTop();
+	      const transitionDuration = "0.4s"; // Adjust the duration as needed
+
+	      // Calculate how much of the section is visible in the viewport
+	      let visiblePercentage = Math.max(
+	        0,
+	        Math.min(1, (windowHeight - (sectionTop - scrollTop)) / sectionHeight)
+	      );
+
+	      if ($(window).width() < 768) {
+	        visiblePercentage = Math.max(
+	          -1,
+	          Math.min(1, (windowHeight - (sectionTop - scrollTop)) / sectionHeight)
+	        );
+	      }
+
+	      // Apply transitions to achieve smooth animation
+	      const cssTransition = `transform ${transitionDuration} ease-in-out`;
+
+	      // Calculate the translateY and translateX values based on the visiblePercentage
+	      let designTranslateY;
+	      let developmentTranslateY;
+	      let developmentTranslateX;
+	      let brandingTranslateY;
+	      let brandingTranslateX;
+	      let qaTranslateY;
+	      let qaTranslateX;
+	      let supportTranslateY;
+	      let supportTranslateX;
+
+	      // Check if the screen width is less than a certain value (e.g., 768px for mobile)
+	      if ($(window).width() < 768) {
+	        if (visiblePercentage > 0) {
+	          // Adjust transformation values for mobile screens
+	          designTranslateY = -120 * visiblePercentage;
+	          developmentTranslateY = -10 * visiblePercentage;
+	          developmentTranslateX = 15 * visiblePercentage;
+	          brandingTranslateY = 70 * visiblePercentage;
+	          brandingTranslateX = -10 * visiblePercentage;
+	          qaTranslateY = 60 * visiblePercentage;
+	          qaTranslateX = -10 * visiblePercentage;
+	          supportTranslateY = 0;
+	          supportTranslateX = -10;
+	        } else {
+	          // Adjust transformation values for mobile screens
+	          designTranslateY = 0;
+	          developmentTranslateY = -10 * visiblePercentage;
+	          developmentTranslateX = 100 * visiblePercentage;
+	          brandingTranslateY = 35 * visiblePercentage;
+	          brandingTranslateX = 90 * visiblePercentage;
+	          qaTranslateY = 35 * visiblePercentage;
+	          qaTranslateX = -90 * visiblePercentage;
+	          supportTranslateY = -10 * visiblePercentage;
+	          supportTranslateX = -110 * visiblePercentage;
+	        }
+	      } else {
+	        if (visiblePercentage > 0) {
+	          // Adjust transformation values for Desktop screens
+	          designTranslateY = -180 * visiblePercentage;
+	          developmentTranslateY = -50 * visiblePercentage;
+	          developmentTranslateX = 250 * visiblePercentage;
+	          brandingTranslateY = 140 * visiblePercentage;
+	          brandingTranslateX = 130 * visiblePercentage;
+	          qaTranslateY = 140 * visiblePercentage;
+	          qaTranslateX = -130 * visiblePercentage;
+	          supportTranslateY = 0 * visiblePercentage;
+	          supportTranslateX = -200 * visiblePercentage;
+	        } else {
+	          // Adjust transformation values for Desktop screens
+	          designTranslateY = -180 * visiblePercentage;
+	          developmentTranslateY = -50 * visiblePercentage;
+	          developmentTranslateX = -60
+	          brandingTranslateY = 140 * visiblePercentage;
+	          brandingTranslateX = 130 * visiblePercentage;
+	          qaTranslateY = 140 * visiblePercentage;
+	          qaTranslateX = -130 * visiblePercentage;
+	          supportTranslateY = 100
+	          supportTranslateX = 100
+	        }
+	      }
+
+	      // Apply the transform CSS property
+	      $(".design-circle").css({
+	        transition: cssTransition,
+	        transform: `translateY(${designTranslateY}px) translateX(0px)`,
+	      });
+	      $(".development-circle").css({
+	        transition: cssTransition,
+	        transform: `translateY(${developmentTranslateY}px) translateX(${developmentTranslateX}px)`,
+	      });
+	      $(".branding-circle").css({
+	        transition: cssTransition,
+	        transform: `translateY(${brandingTranslateY}px) translateX(${brandingTranslateX}px)`,
+	      });
+	      $(".qa-circle").css({
+	        transition: cssTransition,
+	        transform: `translateY(${qaTranslateY}px) translateX(${qaTranslateX}px)`,
+	      });
+	      $(".support-circle").css({
+	        transition: cssTransition,
+	        transform: `translateY(${supportTranslateY}px) translateX(${supportTranslateX}px)`,
+	      });
+	    }
+	  });
+	});
+
+	jQuery(document).ready(function (e) {
+	        e(document).ready(function () {
+	            var t = e("#workSlider"),
+	                o = t.parent();
+	            t.sly({
+	                horizontal: 1,
+	                itemNav: "forceCentered",
+	                smart: 1,
+	                activateMiddle: !1,
+	                itemSelector: null,
+	                activateOn: "click",
+	                mouseDragging: 1,
+	                touchDragging: 1,
+	                releaseSwing: 1,
+	                startAt: 0,
+	                scrollBar: o.find(".scrollbar"),
+	                speed: 300,
+	                elasticBounds: 1,
+	                easing: "easeOutExpo",
+	                dragHandle: 1,
+	                dynamicHandle: 1,
+	                clickBar: 1,
+	                prevPage: o.find(".owl-prev"),
+	                nextPage: o.find(".owl-next"),
+	            });
+	        });
+	});
+
+
+	// Static and Fixed Header Script
+
+	$(window).scroll(function(){
+		if ($(window).scrollTop() >= 50) {
+			$('.static-header').addClass('fixed-header');
+		}
+		else {
+			$('.static-header').removeClass('fixed-header');
+		}
+	});
+</script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.2/plugins/debug.addIndicators.min.js'></script>
+<script type="text/javascript">
+	var controller = new ScrollMagic.Controller(); 
+	var tl = new TimelineMax();
+	tl.to('.box', 1, {
+	  xPercent: '-=350',
+	  }).to('.box', 1, {
+	  yPercent: '+=550',
+	   rotation: -180,
+	  }).to('.box', 1, {
+	  xPercent: '+=350',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  xPercent: '+=10',
+	  }).to('.box', 1, {
+	  yPercent: '+=460',
+	  rotation: -90,
+	  }).to('.box', 1, {
+	  xPercent: '-=500',
+	  }).to('.box', 1, {
+	  xPercent: '-=50',
+	  }).to('.box', 1, {
+	  xPercent: '-=50',
+	  }).to('.box', 1, {
+	  xPercent: '-=50',
+	  }).to('.box', 1, {
+	  xPercent: '-=50',
+	  }).to('.box', 1, {
+	  xPercent: '-=50',
+	  }).to('.box', 1, {
+	  yPercent: '+=360',
+	  rotation: -180,
+	   }).to('.box', 1, {
+	  xPercent: '+=400',
+	});
+	 
+	// vytvoreni sceny
+	var scene = new ScrollMagic.Scene({
+	  //triggerElement: "#trigger1",
+	  triggerHook: 0.2,
+	  duration: 1000
+	})
+	.setTween(tl)
+	//.addIndicators()
+	.addTo(controller);
 </script>
 </html>
