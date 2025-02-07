@@ -230,6 +230,100 @@ display: flex;
 	color: #ffffff;
 }
 
+@media all and (max-width: 767px){
+
+	header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+	
+	    header .headerTop {
+        padding: 20px 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+	header .headerTop .getTouch{
+		display: none;
+	}
+
+	.navbar-toggler {
+	padding: 0px;
+	font-size: inherit;
+	line-height: normal;
+	color: inherit;
+	border: 2px solid #ffffff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-toggler:focus {
+	box-shadow: none;
+}
+
+.navbar-toggler-icon {
+	width: auto;
+	height: auto;
+	background-image: none;
+}
+
+.navbar-expand-lg .offcanvas {
+	flex-grow: 0;
+}
+
+.navbar {
+        position: fixed;
+        height: calc(100vh - 80px);
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        top: 80px;
+        z-index: 10;
+                right: -100%;
+                transition: all 0.30s ease
+    }
+
+ .navbar.navbar-expanded{
+ 	 right: 0;
+ 	 transition: all 0.30s ease
+ }
+
+.navbar .navigation ul {
+    flex-direction: column;
+}
+
+.navRightSide {
+	position: relative;
+    flex-direction: column;
+}
+
+.navbar .container {
+    position: relative;
+    display: block;
+}
+
+.navbar .navigation ul li {
+    padding: 20px 20px;
+    border:none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.navRightSide ul.socialLink{
+	margin: 40px 0;
+}
+
+
+}
+
 /*header*/
 .heroContainer{
 	display: flex;
@@ -511,11 +605,20 @@ font-family: "Krub", serif;
 .coreSection .heading h2{
 	text-align: center;
 }
-.coreSection .scrolHor{
-	padding: 35px 0;
-	overflow: auto;
-	position: relative;
-	z-index: 1
+.coreSection .scrolHor {
+    padding: 35px 0;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of content */
+    position: relative;
+    z-index: 1;
+}
+
+.coreSection .scrolHor .row {
+    display: flex; /* Aligns children (columns) horizontally */
+}
+
+.coreSection .scrolHor .col-2 {
+    display: inline-block; /* Ensure columns display inline */
 }
 
 .coreSection .scrolHor .col-2{
@@ -1320,4 +1423,180 @@ font-family: "Krub", serif;
 	color: #ffffff;
 	margin: 0 8px;
 	font-size: 25px;
+}
+
+@media all and (max-width: 767px){
+	.heroContainer {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+}
+.heroContainer .bannerImg{
+	height: 100%
+}
+
+.heroContainer .bannerImg img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heroDesc {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.whatWeDo .heading, .testimonailSection .heading{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.heading h2{
+	font-size: 30px;
+}
+
+.descWhatdo .icons {
+    min-width: 75px;
+    margin: 0 10px;
+}
+
+.whyUsSection img {
+    min-height: 240px;
+    object-fit: cover;
+    height: 240px;
+}
+
+.whyUsContainer {
+    padding: 20px;
+    }
+
+    .whyUsContainer ul li img{
+    	width: auto;
+    	min-height: auto;
+    	height: auto;
+    }
+
+    .whyUsContainer ul li{
+    	font-size: 20px;
+    }
+
+    .whyus-img{
+    	justify-content: center;
+    	padding: 15px 0 0;
+    }
+
+        .whyus-img img {
+        width: 100%;
+        min-height: auto;
+        height: 190px;
+    }
+
+    .whyus-img .bottomImg {
+    	display: none;
+}
+
+.whyus-img .bottomImg img{
+	width: auto;
+}
+
+    .codeColumn {
+    width: 260px;
+    height: 360px;
+}
+
+.testiBox {
+    padding: 20px;
+    background: #091242;
+}
+
+.serviceSection:before {
+    content: "";
+    background: #091242;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    right: 0;
+    height: 10%;
+}
+
+.serviceSection .container {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.serviceSection .heading{
+	text-align: center;
+	padding: 20px 0;
+}
+
+.serviceSection ul{
+	flex-direction: column;
+}
+
+.serviceSection ul li {
+    max-width: 100%;
+    flex-basis: 100%;
+    font-family: "Rubik", serif;
+    font-size: 18px;
+    }
+
+    .ourTeamSection .container {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.blogs{
+	flex-direction: column;
+}
+
+.blogs .colImg {
+    flex-basis: 100%;
+    max-width: 100%;
+    position: relative;
+}
+
+.blogs .colDesc {
+    flex-basis: 100%;
+    max-width: 100%;
+    padding: 20px 0;
+    display: flex;
+}
+
+.footBg{
+	height: 200px;
+}
+
+.footBg img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.footer .topSection{
+	display: none;
+}
+
+.footBottomSection .copyright{
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.footBottomSection a {
+    font-family: "Krub", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8388A7;
+    margin: 0 5px;
+}
+
+.swiper-slide-active .testiBox .person ~ img{
+	width: 34px;
+	height: 34px;
+}
+
 }

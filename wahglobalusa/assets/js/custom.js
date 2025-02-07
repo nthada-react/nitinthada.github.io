@@ -1,5 +1,11 @@
 new WOW().init();
 
+    $(document).ready(function() {
+      $('.navbar-toggler').click(function() {
+        $('.navbar').toggleClass('navbar-expanded');
+      });
+    });
+
 //heroSectionSwiper
 jQuery(document).ready(function($){
 
@@ -103,22 +109,62 @@ const teamSwiper = new Swiper(".ourTeam .swiper", {
 });
 
 
-/*Bottom icon Slider*/
-const testimonailSwiper = new Swiper(".testimonailSlider .swiper", {
-  // If loop true set photoswipe - counterEl: false
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 15,
-  pagination: {
-  	el: ".swiper-pagination",
-  	clickable: true
-  },
-  // Navigation arrows
-  navigation: {
-  	nextEl: ".swiper-button-next",
-  	prevEl: ".swiper-button-prev"
-  }
-});
+ var swiper = new Swiper(".testimonailSlider .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1024: {
+         slidesPerView: 2,
+          spaceBetween: 15,
+        },
+      },
+    });
+
+
+  var swiper = new Swiper(".teamSlider .swiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1.3,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 1.5,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 2.3,
+          spaceBetween: 15,
+        },
+        1024: {
+         slidesPerView: 4,
+          spaceBetween: 15,
+        },
+      },
+    });
+
+
 
 
 $("[data-fancybox]").fancybox({
@@ -126,16 +172,6 @@ $("[data-fancybox]").fancybox({
 	}
 });
 
-/*Bottom icon Slider*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  const teamSwiper = new Swiper(".teamSlider .swiper", {
-    loop: true,
-    slidesPerView: 4,
-    spaceBetween: 30,
-    
-  });
-});
 
 
 
