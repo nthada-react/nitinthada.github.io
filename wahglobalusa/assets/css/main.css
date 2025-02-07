@@ -229,6 +229,9 @@ display: flex;
 .navRightSide ul.socialLink li a{
 	color: #ffffff;
 }
+.navbar-toggler{
+	display: none;
+}
 
 @media all and (max-width: 767px){
 
