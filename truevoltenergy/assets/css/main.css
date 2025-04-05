@@ -45,12 +45,6 @@ h3 {
 	font-family: "Poppins", sans-serif;
 }
 
-h3 span {
-	font-size: 20px;
-	font-weight: 300;
-	color: #ff0000;
-	display: block;
-}
 
 p {
 	font-family: "Poppins", sans-serif;
@@ -101,6 +95,7 @@ p {
 	justify-content: flex-start;
 	align-items: center;
 	height: 60px;
+	color: #ffffff;
 }
 
 /*header*/
@@ -166,6 +161,10 @@ header{
 .navigation .button-menu li  .btn-getStrated{
 	background: #ffffff;
 	color: #26A9E0;
+}
+
+.goBack a.btn, .goBack a.btn:hover{
+	color: #ffffff;
 }
 
 /*****************/

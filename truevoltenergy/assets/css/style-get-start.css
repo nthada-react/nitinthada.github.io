@@ -1,0 +1,404 @@
+#getStratedForm{
+	background: url(../img/get-started-bg.png) no-repeat center center;
+	background-size: cover;
+	min-height: 100vh;
+	background-attachment: fixed;
+}
+
+#getStratedForm header .navbar .logo{
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.getStartedForm{
+	max-width: 750px;
+	margin: 0 auto;
+	padding: 60px 15px;
+	position: relative;
+}
+
+.getStartedForm .posi-rel{
+	position: relative;
+}
+
+.getStartedForm .heading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.getStartedForm .heading h1{
+	font-size: 37px;
+	font-weight: 600;
+	color: #404040;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 3px solid #D9D9D9;
+	padding:15px 5px;
+	text-align: center;
+	margin: 0;
+}
+
+.getStartedForm .heading h1 img{
+	margin-right: 10px;
+}
+
+.getStartedForm h2{
+	font-size: 49px;
+	font-weight: 600;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+.getStartedForm h3{
+	font-size: 38px;
+	font-weight: 600;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.getStartedForm p{
+	font-size: 28px;
+	font-weight: 500;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 30px;
+	line-height: 145%
+}
+
+.getStartedForm .btn-continue{
+	background: #26A9E0;
+	width: 175px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 80px;
+	border:none;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.getStartedForm .btn-continue:disabled{
+	background: #E6E6E6;
+	color: #B3B3B3;
+}
+
+
+.getStartedForm .form-control{
+	border-radius: 80px;
+	border:1px solid #B3B3B3;
+	font-size: 27px;
+	color: #999999;
+	padding: 10px 30px;
+	margin-bottom: 30px;
+}
+
+
+.getStartedForm .form-control.location-field{
+	background: #ffffff url(../img/location-icon.svg) no-repeat 25px center;
+	padding-left: 60px;
+}
+
+.getStartedForm .form-control:active{
+	color: #000000;
+	border-color: #000000;
+}
+
+/* Focused/Visited Input Style */
+.getStartedForm .form-control:focus,
+.getStartedForm .form-control:valid {
+  color: #000000;
+}
+
+.getStartedForm .form-control::placeholder{
+	color: rgba(0,0,0,0.5);
+}
+
+.getStartedForm select.form-control{
+	background: url(../img/arrow-down-black.svg) no-repeat 96% center;
+}
+
+.getStartedForm label{
+	font-size: 23px;
+	font-weight: 500;
+	color: #333333;
+	padding: 0 32px 10px 32px;
+}
+
+.getStartedForm .gryText{
+	font-size: 29px;
+	font-weight: 500;
+	color: #333333;
+	opacity: 0.35;
+	text-align: center;
+	margin-bottom: 30px;
+	line-height: 136%
+}
+
+.getStartedForm label.radioBg{
+	border-radius: 15px;
+	padding: 20px 24px;
+	border:2px solid #CCCCCC;
+	font-size: 25px;
+	font-weight: 400;
+	color: #1D1F1E;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.getStartedForm label.radioBg input[type=radio]{
+	width: 28px;
+	height: 28px;
+	margin-right: 24px;
+}
+
+.getStartedForm label.checkboxLabel{
+	border-radius: 15px;
+	padding: 15px 24px;
+	border:2px solid #CCCCCC;
+	font-size: 18px;
+	line-height: 170%;
+	font-weight: 400;
+	color: #1D1F1E;
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 30px;
+}
+
+.getStartedForm label.checkboxLabel input[type=checkbox]{
+	width: 28px;
+	height: 28px;
+	margin-right: 10px;
+}
+
+.termsClass{
+	border-radius: 15px;
+	padding: 15px 24px;
+	border:2px solid #CCCCCC;
+	margin-bottom: 30px;
+}
+
+.termsClass h3{
+	font-size: 23px;
+	line-height: normal;
+	font-weight: 500;
+	color: #333333;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	text-align: left;
+}
+
+.termsClass h3 small{
+	font-size: 18px;
+	display: block;
+}
+
+.termsClass h3 img{
+	margin-right: 10px;
+}
+
+.termsClass textarea, .termsClass textarea:focus, .termsClass textarea:active, .termsClass textarea:focus-visible{
+	font-size: 23px;
+	line-height: normal;
+	font-weight: 500;
+	color: #333333;
+	width: 100%;
+	border:none;
+	background: none;
+	outline: none;	
+	height: 40px;
+}
+
+.largeBtn{
+	border:2px solid #B3B3B3;
+	border-radius: 30px;
+	padding: 25px 30px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 32px;
+	font-weight: 600;
+	color: #333333;
+	margin-bottom: 30px;
+}
+
+.largeBtn img{
+	margin-right: 30px;
+}
+
+.largeBtn:hover{
+	border-color: #29A0EA;
+	}
+
+
+  .upload-area {
+            border: 1px dashed #29A0EA;
+            padding:25px 30px;
+            text-align: center;
+            margin: 0 auto 30px;
+            cursor: pointer;
+            border-radius: 30px;
+            background: #29A0EA;
+            color: #ffffff;
+        }
+
+        .upload-area.dragging {
+            background-color: #f0f8ff;
+        }
+
+        .upload-area p {
+            margin: 10px 0;
+            font-size: 20px;
+            font-weight: 500;
+             color: #ffffff;
+        }
+
+        .upload-area p strong{
+        	font-weight: 700;
+        	font-size: 26px;
+        }
+
+        .file-name {
+        	position: relative;
+        	background: url(../img/file-icon.svg) no-repeat left center;
+        	background-size: 60px;
+        	display: flex;
+        	align-items: center;
+        	font-size: 24px;
+            font-weight: 500;
+             color: #333333;
+             padding:30px 75px 30px 75px;
+        }
+
+        .file-name:after {
+        	content: "";
+        	position: absolute;
+        	background: url(../img/tick-icon.svg) no-repeat left center;
+        	background-size: 50px;
+        	width: 50px;
+        	height: 50px;
+        	right: 0;
+        	    top: 15px;
+        }
+
+        /* Disabled button styling */
+        .upload-area input[type="file"] {
+            display: none;
+        }
+
+
+/* Add animation for hiding and showing sections */
+.animateForm {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden; /* Prevents interaction when hidden */
+  position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.animateForm.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible; /* Make the element interactable */
+}
+
+.animateForm.hide {
+  opacity: 0;
+  transform: translateY(-20px);
+  visibility: hidden; /* Prevents interaction when hidden */
+}
+
+/* Add animation for hiding and showing sections */
+
+.FinalStep{
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	padding: 60px 0
+}
+
+.FinalStep h3{
+	    font-size: 38px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.FinalStep h4{
+	    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.FinalStep .quoteId {
+	    font-size: 28px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.FinalStep .quoteId strong{
+	 font-weight: 600;
+}
+
+.FinalStep p{
+	 font-size: 28px;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 150%
+}
+
+.FinalStep .btn-done{
+	background: #26A9E0;
+	width: 175px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 80px;
+	border:none;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.progressBar{
+	width: 100%;
+	height: 12px;
+	background: #D9D9D9;
+	border-radius: 12px;
+	margin-bottom: 40px;
+	position: relative;
+	overflow: hidden;
+}
+
+.progressBar span{
+	width: 100%;
+	height: 12px;
+	background: green;
+	border-radius: 12px;
+	position: absolute;
+	left: 0;
+	top: 0
+}
