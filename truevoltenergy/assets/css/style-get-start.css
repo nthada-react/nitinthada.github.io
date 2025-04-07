@@ -402,3 +402,76 @@
 	left: 0;
 	top: 0
 }
+
+.servicePopup{
+	font-size: 24px;
+	font-weight: 500;
+	color: #29A0EA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 30px 0;
+}
+
+#servicePopupModal .modal-content{
+	padding: 50px;
+	border-radius: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#servicePopupModal .serviceHead{
+	padding: 15px 45px;
+	background: #E6E6E6;
+	border-radius: 87px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#servicePopupModal h3{
+	font-size: 38px;
+	font-weight: 600;
+	color: #333333;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#servicePopupModal .btn-continue{
+	background: #26A9E0;
+	width: 175px;
+	height: 72px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 80px;
+	border:none;
+	font-size: 24px;
+	color: #ffffff;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+
+#servicePopupModal a{
+	font-size: 24px;
+	font-weight: 500;
+	color: #29A0EA;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#servicePopupModal .modal-dialog {
+	max-width: 680px;
+}
+
+#servicePopupModal .modal-dialog .btn-close{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+}

@@ -80,7 +80,7 @@
 					<a href="#" id="gotoUploadBill" class="largeBtn"><img src="assets/img/upload-icon.svg" alt="" /> Upload Bill</a>
 				</div>
 				<div class="form-group">
-					<a href="#" class="largeBtn"><img src="assets/img/location-icon1.svg" alt="" /> Enter Location Info</a>
+					<a href="#" id="gotoServiceBill" class="largeBtn"><img src="assets/img/location-icon1.svg" alt="" /> Enter Location Info</a>
 				</div>
 			</div>
 <!---->
@@ -96,6 +96,18 @@
      <div id="file-name" class="file-name" style="display: none">fgf</div>
 
 				<button type="button" id="gotoStep2" class="btn-continue" disabled>Continue</button>
+			</div>
+
+			<!---->
+			<div id="servicesStep1" class="animateForm">
+				<div class="progressBar"><span style="width: 20%"></span></div>
+				<h3>Step 1: Service Location(s)</h3>
+				<p>Enter your service address to find your location(s).</p>
+				 <div class="form-group">
+					<input type="text" name="service-location" id="service-location" class="form-control location-field" placeholder="Enter your Business Name" />
+	  				<button type="button" id="gotoContinueStep2" class="btn-continue" disabled>Continue</button>
+	  				<a href="#" id="servicePopup" class="servicePopup" data-bs-toggle="modal" data-bs-target="#servicePopupModal">I can't find my location</a>
+				</div>
 			</div>
 
 
@@ -226,6 +238,18 @@
 
 
 
+<!-- Services Modal -->
+<div class="modal fade" id="servicePopupModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="serviceHead">Service Location</div>
+      <h3>Are you done adding service locations?</h3>
+      <button type="button" id="gotoContinueStep2" class="btn-continue" disabled>Continue</button>
+      <a href="#">Add another location</a>
+    </div>
+  </div>
+</div>
 
 
 
@@ -273,15 +297,30 @@ document.getElementById('zip-code').addEventListener('input', function() {
 // Enable or disable the continue button based on the input value
 document.getElementById('business-name').addEventListener('input', function() {
   const businessNameInput = document.getElementById('business-name');
-  const gotoStep4Button = document.getElementById('gotoStep4');
+  const gotoStep2Button2 = document.getElementById('gotoStep2');
 
   // Enable or disable the button based on the input value
   if (businessNameInput.value.trim() !== "") {
-    gotoStep4Button.disabled = false;
+    gotoStep2Button2.disabled = false;
   } else {
-    gotoStep4Button.disabled = true;
+    gotoStep2Button2.disabled = true;
   }
 });
+
+
+// Enable or disable the continue button based on the input value
+document.getElementById('service-location').addEventListener('input', function() {
+  const serviceLocationInput = document.getElementById('service-location');
+  const gotoContinueStep2Button = document.getElementById('gotoContinueStep2');
+
+  // Enable or disable the button based on the input value
+  if (serviceLocationInput.value.trim() !== "") {
+    gotoContinueStep2Button.disabled = false;
+  } else {
+    gotoContinueStep2Button.disabled = true;
+  }
+});
+
 
 
 // Get the checkbox and the button
@@ -461,10 +500,30 @@ document.getElementById('gotoUploadBill').addEventListener('click', function(eve
     fadeIn(uploadStep1);
 });
 
+
+document.getElementById('gotoServiceBill').addEventListener('click', function(event) {
+    event.preventDefault();
+    const chooseSection = document.getElementById('choose-section');
+    const servicesStep1 = document.getElementById('servicesStep1');
+
+    fadeOut(chooseSection);
+    fadeIn(servicesStep1);
+});
+
+
 // Repeat the same for other steps...
 document.getElementById('gotoStep2').addEventListener('click', function() {
   this.disabled = false;
   const uploadStep1 = document.getElementById('uploadStep1');
+  const step2 = document.getElementById('step2');
+
+  fadeOut(uploadStep1);
+  fadeIn(step2);
+});
+
+document.getElementById('gotoContinueStep2').addEventListener('click', function() {
+  this.disabled = false;
+  const uploadStep1 = document.getElementById('servicesStep1');
   const step2 = document.getElementById('step2');
 
   fadeOut(uploadStep1);
