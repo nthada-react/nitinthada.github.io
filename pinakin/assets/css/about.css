@@ -1,0 +1,714 @@
+/* About hero section starts */
+
+.aboutHeroSection {
+  /* background: url(../images/hero-bg.png) no-repeat top center; */
+  /* height: calc(100vh - 140px); */
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: var(--Primary, linear-gradient(45deg, #000000 0%, #fd6100 100%)); */
+  /* padding: 90px 0; */
+
+}
+
+.aboutHero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+}
+
+
+
+.aboutHeroSection .aboutHeroContent {
+  position: absolute;
+  max-width: 1260px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.aboutHeroSection .aboutHeroContent h1 {
+  color: #ffffff;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 1px 1.732051px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.aboutHeroSection .aboutHeroContent h2 {
+  color: #ffffff;
+  font-size: 2.25rem;
+  line-height: 50px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.aboutHeroSection .aboutHeroContent p {
+  margin: 22px 0 0 3px;
+  /* width: 854px; */
+  max-width: 70%;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.aboutHeroSection .aboutHeroContent .btn-box {
+  display: flex;
+  align-items: center;
+  margin: 40px -15px 0;
+}
+
+.aboutHeroSection .aboutHeroContent .btn,
+.aboutHeroSection .aboutHeroContent .btn_black {
+  width: 270px;
+  margin: 0 15px;
+}
+
+@media all and (max-width: 767px) {
+
+  .aboutHeroSection {
+    /* background: url(../images/hero-bg-mobile.png) no-repeat top center;
+    background-size: contain; */
+    height: 540px;
+  }
+
+  .aboutHeroSection .aboutHeroContent {
+    top: 20px;
+    padding: 0 15px;
+  }
+
+  .aboutHeroSection .aboutHeroContent .btn-box{
+    flex-direction: column;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .aboutHeroSection .aboutHeroContent .btn-box .btn{ 
+    margin: 10px 0;
+  }
+  .aboutHeroSection .aboutHeroContent h1 {
+    font-size: 34px;
+  }
+
+  .aboutHeroSection .aboutHeroContent h2 {
+    width: 100%;
+    background-size: 100% 48px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    color: #ec0303;
+    font-weight: 500;
+    padding: 0 10px;
+    margin: 0 15px
+  }
+
+  .aboutHeroSection .aboutHeroContent .btn,
+  .coreValues .btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    height: 52px;
+  }
+
+  .aboutHeroSection .aboutHeroContent p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+}
+
+/* About hero section ends */
+
+/* Our story section starts */
+.ourStory {
+  padding: 90px 0;
+}
+
+.ourStory .bedge {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ff0000;
+  margin-bottom: 15px;
+  margin-top: 35px;
+  display: block;
+}
+
+.ourStory h3 {
+  font-size: 50px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.ourStory p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5e5e5e;
+  margin: 0 0;
+}
+
+.ourStory ul {
+  padding: 0 0;
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  margin-top: 72px;
+}
+
+.ourStory ul li {
+  list-style: none;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ourStory ul li:not(:first-child) {
+  padding-left: 20px;
+}
+
+.ourStory ul li:not(:last-child) {
+  border-right: 1px solid #d4d4d4;
+}
+
+.ourStory h2 {
+  color: #010101;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.ourStory h5 {
+  color: #010101;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.ourStory h2 span {
+  color: #ff0000;
+}
+
+/* Our story section ends */
+
+/* Our our Mission starts */
+.ourMission {
+  padding: 120px 0 100px;
+  background-color: #f9f9f9;
+}
+
+.ourMission .bedge {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ff0000;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.ourMission h3 {
+  font-size: 50px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.ourMission p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5e5e5e;
+  margin: 0 0;
+}
+
+.ourMission .courses {
+  margin-top: 45px;
+}
+
+.ourMission .courses h5 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ff0000;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.ourMission .progress {
+  margin-bottom: 30px;
+  background-color: #ececec;
+  border-radius: 10px;
+  width: 439px;
+}
+
+.ourMission .progress-bar {
+  background-color: #5e5e5e;
+  border-radius: 10px;
+}
+
+.ourMission .btn_black {
+  width: 270px;
+}
+
+.ourMission .btn-box {
+  margin-top: 45px;
+  position: relative;
+  z-index: 2;
+}
+
+.ourMission .play {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Our our Mission ends */
+
+
+/* Our Core VAlues starts */
+
+.coreValues {
+  padding: 80px 0;
+  background: url("../images/core-value.png");
+}
+
+.coreValues h3 {
+  color: #000000;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.coreValues h4 {
+  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.coreValues p {
+  font-size: 18px;
+  color: #5e5e5e;
+  margin-bottom: 0;
+}
+
+.coreValues .cards {
+  border: 1px solid #ff0000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 100%;
+}
+
+.coreValues .bedge {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ff0000;
+  display: block;
+}
+
+.coreValues .btn-box {
+  margin-top: 65px;
+}
+
+.coreValues .btn-box .btn-red {
+  width: 270px;
+  margin: 0 auto;
+}
+
+/* Our Core VAlues ends */
+
+
+
+/* Our team starts */
+.teamSection {
+  padding: 100px 0;
+  background: #F5F5F5;
+  background: linear-gradient(to bottom, #F5F5F5 0%, #F5F5F5 33%, #E6E0F1 32%, #F8E3D5 100%);
+}
+
+.teamSection .bedge {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ff0000;
+  display: block;
+}
+
+.teamSection .subHeading {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5e5e5e;
+  margin: 0 0;
+}
+
+.teamSection .members {
+  background-color: #000000;
+  border-radius: 10px;
+  margin: 60px 0 80px;
+  padding: 30px;
+}
+
+.teamSection .members img {
+  margin-bottom: 25px;
+}
+
+.teamSection .members h4 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.teamSection .members p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-align: left;
+}
+
+.testimon {
+  margin-top: 67px;
+  position: relative;
+}
+
+.testimon .vt {
+  position: absolute;
+  left: 100px;
+  top: -30px;
+}
+
+.teamSection .btn-box {
+  margin-top: 45px;
+}
+
+.teamSection .btn-red {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 440px;
+}
+
+/* Our team ends */
+
+/* Masonery  starts */
+/* .grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  grid-auto-rows: 50px;
+  grid-gap: 10px;
+}
+
+.short, [short] {
+  grid-row: span 1;
+  background-color: green;
+}
+
+[tall] {
+  grid-row: span 2;
+  background-color: crimson;
+}
+
+[taller] {
+  grid-row: span 3;
+  background-color: blue;
+}
+
+[tallest] {
+  grid-row: span 4;
+  background-color: gray;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+} */
+
+.grid-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  /* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */
+  height: 960px;
+
+  /* Optional */
+  /* background-color: #f7f7f7; */
+  /* border-radius: 3px; */
+  /* padding: 20px; */
+  /* width: 60%; */
+  margin: 40px auto;
+  /* counter-reset: items; */
+}
+
+.item {
+  width: 24%;
+  /* Optional */
+  position: relative;
+  margin-bottom: 2%;
+  border-radius: 3px;
+  /* background-color: #a1cbfa;
+  border: 1px solid #4290e2; */
+  /* box-shadow: 0 2px 2px rgba(0,90,250,0.05),
+    0 4px 4px rgba(0,90,250,0.05),
+    0 8px 8px rgba(0,90,250,0.05),
+    0 16px 16px rgba(0,90,250,0.05);
+  color: #fff; */
+  /* padding: 15px; */
+  box-sizing: border-box;
+}
+
+/* Just to print out numbers */
+/* div.item::before {
+  counter-increment: items;
+  content: counter(items);
+} */
+
+/* Re-order items into 3 rows */
+.item:nth-of-type(4n+1) {
+  order: 1;
+}
+
+.item:nth-of-type(4n+2) {
+  order: 2;
+}
+
+.item:nth-of-type(4n+3) {
+  order: 3;
+}
+
+.item:nth-of-type(4n) {
+  order: 4;
+}
+
+/* Force new columns */
+.break {
+  flex-basis: 100%;
+  width: 0;
+  border: 1px solid #ddd;
+  margin: 0;
+  content: "";
+  padding: 0;
+}
+
+.masonery {
+  padding: 90px 0 103px;
+}
+
+.masonery p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #5e5e5e;
+}
+
+/* Masonery  ends */
+
+
+/* Success Stories section starts */
+
+.successSection {
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.successSection .successContent {
+  position: absolute;
+  max-width: 1260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.successSection .successContent h1 {
+  color: #ffffff;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 1px 1.732051px 0 rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.successSection .successContent p {
+  max-width: 70%;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: center;
+}
+
+.successSection .successContent .btn-box {
+  display: flex;
+  align-items: center;
+  margin: 40px -15px 0;
+}
+
+.successSection .successContent .btn,
+.successSection .successContent .btn_black {
+  width: 270px;
+  margin: 0 15px;
+}
+
+.successSection .achievements .cards {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.successSection .achievements .cards>div {
+  width: 180px;
+}
+
+.successSection .achievements .cards img{
+  margin-right: 10px;
+}
+
+.successSection .achievements .cards h3 {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+
+.successSection .achievements .cards h4 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+@media all and (max-width: 767px) {
+
+  .successSection {
+    /* background: url(../images/hero-bg-mobile.png) no-repeat top center;
+    background-size: contain; */
+    background: #5e5e5e;
+    height: auto;
+    display: block;
+  }
+
+  .successSection .achievements .cards img{
+    width: 60px;
+  }
+  .successSection .achievements .cards{
+    margin: 10px 0;
+  }
+  .testimon .vt{
+    display: none;
+  }
+  .successSection .successContent {
+    /* top: 60px;
+    padding: 0 15px; */
+    background: #010101;
+    padding: 10px;
+    position: relative;
+  }
+
+  .successSection .successContent h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+  .successSection .successContent p{
+    max-width: 100%;
+  }
+
+  .successSection .successContent h2 {
+    width: 100%;
+    background-size: 100% 48px;
+    height: 48px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    color: #ec0303;
+    font-weight: 500;
+    padding: 0 10px;
+    margin: 0 15px
+  }
+
+  .successSection .successContent .btn,
+  .coreValues .btn {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    height: 52px;
+  }
+
+  .successSection .aboutHeroContent p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .joinUs{
+    padding: 20px 0 !important;
+  }
+
+  .ourMission .btn-box{
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .ourMission .play{
+    bottom: -80px;
+  }
+  .coreValues .row .col-6{
+    margin-bottom: 20px;
+  }
+}
+
+/* Success Stories section ends */
+
+/* Join Community section starts */
+.joinUs {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.joinUs h3 {
+  margin-bottom: 25px
+}
+
+
+.joinUs .btn-box {
+  display: flex;
+  align-items: center;
+}
+
+.joinUs .btn-box a{
+  margin: 0 8px;
+}
+
+/* Join Community section ends */
+
+
+
+/* Mobile css */
+
+@media all and (max-width: 767px) {
+  .ourMission .progress{
+    width: 100%;
+  }
+
+}
