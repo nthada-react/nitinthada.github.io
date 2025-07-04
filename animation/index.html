@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pig Coin Animation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+  <div id="coinAnimation" style="width: 300px; height: 300px;"></div>
+
+  <script>
+    var animation = lottie.loadAnimation({
+      container: document.getElementById('coinAnimation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'pig-coin-animation.json'
+    });
+  </script>
+</body>
+</html>
