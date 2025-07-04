@@ -7,10 +7,19 @@
 </head>
 <body>
   <div id="coinAnimation" style="width: 300px; height: 300px;"></div>
+   <div id="fly" style="width: 300px; height: 300px;"></div>
 
   <script>
     var animation = lottie.loadAnimation({
       container: document.getElementById('coinAnimation'),
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: 'pig-coin-animation.json'
+    });
+
+     var animation = lottie.loadAnimation({
+      container: document.getElementById('fly'),
       renderer: 'svg',
       loop: true,
       autoplay: true,
