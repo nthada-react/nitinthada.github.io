@@ -148,3 +148,43 @@ var testimonailSliderswiper = new Swiper(".testimonailSlider .swiper", {
 
 
 
+/**/
+
+let scrollTarget = window.scrollY;
+  let isScrolling = false;
+
+  window.addEventListener('wheel', function (e) {
+    e.preventDefault();
+
+    scrollTarget += e.deltaY;
+
+    // Clamp the scrollTarget within scrollable bounds
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    scrollTarget = Math.max(0, Math.min(scrollTarget, maxScroll));
+
+    if (!isScrolling) {
+      smoothScroll();
+    }
+  }, { passive: false });
+
+  function smoothScroll() {
+    isScrolling = true;
+
+    const currentScroll = window.scrollY;
+    const distance = scrollTarget - currentScroll;
+    const scrollStep = distance * 0.15; // Smoother
+
+    if (Math.abs(distance) > 0.5) {
+      window.scrollBy(0, scrollStep);
+      requestAnimationFrame(smoothScroll);
+    } else {
+      isScrolling = false;
+    }
+  }
+
+  // Keep scrollTarget updated if user scrolls by other means (keyboard, touch)
+  window.addEventListener('scroll', () => {
+    if (!isScrolling) {
+      scrollTarget = window.scrollY;
+    }
+  });

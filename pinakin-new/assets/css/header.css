@@ -63,12 +63,18 @@
     font-display: swap;
 }
 
-
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
 
 
 html,
 body {
     height: 100%;
+     scroll-behavior: smooth;
+     scroll-behavior: auto !important;
 }
 
 body:not(.custom-background-image):before, body:not(.custom-background-image):after {
