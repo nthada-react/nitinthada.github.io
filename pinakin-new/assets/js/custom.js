@@ -134,8 +134,10 @@ const productSliderSwiper = new Swiper(".productSlider .swiper", {
 
 /*Bottom icon Slider*/
 var testimonailSliderswiper = new Swiper(".testimonailSlider .swiper", {
+    spaceBetween: 50,
 	loop: true,
-	slidesPerView: 1,
+    centeredSlides: true,
+	slidesPerView: 2.5,
 	 speed: 1000,
     autoplay: {
         delay: 3000,

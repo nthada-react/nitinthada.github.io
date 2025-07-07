@@ -1,0 +1,159 @@
+﻿@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/BrownBold.eot');
+    src: url('../fonts/BrownBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrownBold.woff2') format('woff2'),
+        url('../fonts/BrownBold.woff') format('woff'),
+        url('../fonts/BrownBold.ttf') format('truetype'),
+        url('../fonts/BrownBold.svg#BrownBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownExtraBoldCondensed';
+    src: url('../fonts/BrownExtraBoldCondensed.eot');
+    src: url('../fonts/BrownExtraBoldCondensed.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrownExtraBoldCondensed.woff2') format('woff2'),
+        url('../fonts/BrownExtraBoldCondensed.woff') format('woff'),
+        url('../fonts/BrownExtraBoldCondensed.ttf') format('truetype'),
+        url('../fonts/BrownExtraBoldCondensed.svg#BrownExtraBoldCondensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Brown';
+    src: url('../fonts/BrownItalic.eot');
+    src: url('../fonts/BrownItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrownItalic.woff2') format('woff2'),
+        url('../fonts/BrownItalic.woff') format('woff'),
+        url('../fonts/BrownItalic.ttf') format('truetype'),
+        url('../fonts/BrownItalic.svg#BrownItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownMedium';
+    src: url('../fonts/BrownMedium.eot');
+    src: url('../fonts/BrownMedium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrownMedium.woff2') format('woff2'),
+        url('../fonts/BrownMedium.woff') format('woff'),
+        url('../fonts/BrownMedium.ttf') format('truetype'),
+        url('../fonts/BrownMedium.svg#BrownMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BrownLight';
+    src: url('../fonts/BrownLight.eot');
+    src: url('../fonts/BrownLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BrownLight.woff2') format('woff2'),
+        url('../fonts/BrownLight.woff') format('woff'),
+        url('../fonts/BrownLight.ttf') format('truetype'),
+        url('../fonts/BrownLight.svg#BrownLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body:not(.custom-background-image):before, body:not(.custom-background-image):after {
+    height: 0;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'BrownLight';
+    font-weight: 300;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button,
+select,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    outline: none;
+}
+
+a:hover,
+a:active,
+a:focus,
+button:hover,
+button:active,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: inherit;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'BrownExtraBoldCondensed';
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+input.form-control::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
+
+input.form-control::-moz-placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
+
+input.form-control:-ms-input-placeholder {
+    color: #000000;
+    opacity: 0.5;
+}
+
+
+
