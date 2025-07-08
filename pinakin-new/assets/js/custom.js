@@ -47,7 +47,7 @@ jQuery(document).ready(function($){
     let heroSectionSwiper = new Swiper ('.heroContainer .swiper-container', options);
     
     let slidersCount = heroSectionSwiper.params.loop ? heroSectionSwiper.slides.length - 2 : heroSectionSwiper.slides.length;
-    let widthParts = 100 / slidersCount;
+    let widthParts = 200 / slidersCount;
     
     $('.swiper-counter .total').html(slidersCount);
     for(let i=0; i<slidersCount; i++){
