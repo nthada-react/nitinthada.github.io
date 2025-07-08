@@ -13,7 +13,7 @@ $(document).on('click', '.offcanvas-header.open', function () {
 //heroSectionSwiper
 jQuery(document).ready(function($){
 
-	let autoPlayDelay = 5000;
+	let autoPlayDelay = 6000;
 
 	let options = {
         //init: true,

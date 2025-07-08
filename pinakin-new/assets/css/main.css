@@ -286,7 +286,7 @@ header .navSection {
   position: absolute;
   z-index: 10;
   /*bottom: 150px;*/
-  bottom: 120px;
+  bottom: 90px;
   width: 1370px;
   max-width: 100%;
 }
@@ -311,13 +311,13 @@ header .navSection {
 .heroContainer .swiper-container .swiper-slide .slideContent .heroDesc h1{
   color: #ffffff;
   font-size: 65px;
-  line-height: 75px;
+  line-height: 70px;
   letter-spacing: 3px;
   text-transform: uppercase;
   max-width: 100%;
   text-align: center;
   font-weight: normal;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
 }
 
@@ -325,7 +325,7 @@ header .navSection {
 	display: block;
 	color: #e4aa54;
   font-size: 30px;
-  line-height: 75px;
+  line-height: 50px;
    font-family: 'BrownLight';
    text-shadow: 1px 1px 1px  rgba(0,0,0,0.6);
 }
@@ -435,7 +435,7 @@ header .navSection {
   }*/
 
 
-  .heroContainer .swiper-container .swiper-slide-active img{
+ .heroContainer .swiper-container .swiper-slide-active img{
     animation: slideShow 24s linear infinite 0s;
     -o-animation: slideShow 24s linear infinite 0s;
     -moz-animation: slideShow 24s linear infinite 0s;
@@ -531,7 +531,7 @@ slideShow {  0% {
 }
 
 .swiper-pagination{
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .swiper-pagination .swiper-pagination-bullet{
